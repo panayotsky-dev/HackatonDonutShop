@@ -1,0 +1,112 @@
+/* .base {
+width: 100%;
+height: 211vh;
+}
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center; 
+  width: 428px;
+  height: 926px;
+  margin: 0 auto; 
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+} */
+
+.prep {
+  background-color: #FFE84A;
+}
+
+.prep-bg-cont{
+  width: 100%;
+}
+
+.prep-cont {
+  width: 100%;
+}
+
+.prep-title-cont {
+  width: 100%;
+  height: 250px;
+}
+
+@media all and (min-width: 800px) {
+  .prep-bg-cont    { flex: 3 0px; }
+  .prep-bg-cont { order: 3; } 
+  .prep-cont   { order: 2; }
+  .prep-title-cont { order: 1; } 
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .prep-page-donut {
+    animation: spin infinite 40s linear;
+  }
+} */
+
+.prep-big-title {
+  font-size: 40px;
+  letter-spacing: 0px;
+  font-weight: 900;
+  padding-top: 0vw;
+  z-index: 4;
+  line-height: 1.07;
+  letter-spacing: 0;
+  margin: 29vw auto 0 auto;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 3px rgb(5 2 1 / 67%);
+}
+ 
+
+.prep-page-bg {
+  background-image: url(/src/assets/sparkles.svg);
+  width: 100%;
+  height: 890px; 
+  background-position: 45% 10%;
+  background-size: 639px 577px;
+  background-repeat: no-repeat;
+  z-index: 1; 
+  margin-top: -55vw;
+}
+
+
+.prep-page-donut{  
+  margin: -13vw auto 0 auto;
+ 
+}
+
+.prep-page-donut-img{
+  width: 293px;
+  height: 282px;
+  bottom: 11%;
+  left: 14%; 
+  z-index: 3333;
+}
+
+@media (max-width: 428px) {
+  /* .wrapper {
+    overflow: hidden;
+    width: 390px;
+    height: 673px;
+  } */
+ .prep-page-donut {
+  margin: -174vw 0 0 0;
+ }
+
+ .prep-title-cont {
+  margin: -147vw 0 0 0;
+  z-index: 33333;
+ }
+
+ .prep-page-donut-img {
+  width: 248px;
+  height: 282px;
+  /* position: relative;
+  z-index: 3; */
+}
+}

@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* #root{
+    min-width: 428px;
+    max-width: 428px;
+    width: 428px;
+    min-height: 926px;
+    max-height: 926px;
+    height: 926px;
+    position:absolute;
+    
+} */
+
+body{
+  margin: 0;
+  width: 100%;
+  color:white;
+  font-family: 'Outfit', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App { 
+  color: white;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: spin infinite 50s linear;
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Responsive */
+
+@media (max-width: 428px) {
+    .wrapper {
+      overflow: hidden;
+    }
+
+    .start-page-bg{
+      background-image: url('/sparkles.svg');
+      width: 100%;
+      height: 742px;
+      top: -15vw;
+      right: -2vw;
+      position: absolute;
+      background-position: 53% -49%;
+      background-size: 631px 600px;
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+
+    .main {
+      text-align: left;
+      width: 35%;
+    }
+    
+    .aside-1 { 
+      width: 65%;
+    }
+
+    .payment-page-donut2 {
+      background-image: url(/unicorn_dust.svg);
+      width: 250px;
+      height: 185px;
+      margin: 173vw 0 0 67vw;
+      position: fixed;
+      background-repeat: no-repeat;
+  }
+
+  .payment-page-donut1 {
+    background-image: url(/sky_shaped.svg);
+    width: 220px;
+    height: 220px;
+    background-repeat: no-repeat;
+    top: 0;
+    /* position: relative; */
+    z-index: 2;
+    margin: 130vw 0 0 -30vw;
+    position: fixed;
+}
+
+.apple-container {
+  width: 100%;
+  height: 4vw;
+  margin: 113vw 0 0 0;
+  position: fixed;
+}
+
+.gpay-container {
+  width: 100%;
+  height: 4vw;
+  margin: 91vw 0 0 0;
+  position: fixed;
+}
+
+.t1 {
+  width: 100%;
+  height: 4vw;
+  margin: 25vw 0 0 13vw;
+  position: fixed;
+}
+
+.t2 {
+  width: 100%;
+  height: 4vw;
+  margin: 51vw 0 0 -18vw;
+  position: fixed;
+}
+
+.t3 {
+  width: 100%;
+  height: 4vw;
+  margin: 59vw 0 0 3vw;
+  position: fixed;
+}
+
+.pickup-title-cont {
+  width: 100%; 
+  margin-top: 11vw;
+}
+
+.payment-page-donut {
+  margin: -138vw auto 0 auto;
+}
+
+.payment-title-cont {
+  width: 100%;
+  height: 250px;
+  margin: -95vw 0 0 0;
+}
+}
+
+@media (max-width: 650px) {
+    .start-page-bg {
+      background-image: url(/sparkles.svg);
+      width: 100%;
+      height: 742px;
+      top: -15vw;
+      right: -2vw;
+      position: absolute;
+      background-position: 7% -544%;
+      background-size: 680px 740px;
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      padding: 0;
+      margin: 4.5vw 0px;
+  }
+
+  .menu-big-title {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 72px;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin: 0vw 0vw 11vw 0.3vw;
+    padding: 0 17px;
+}
+
+.menu-small-title {
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+  line-height: 0.3;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  margin: 10.5vw -0.2vw 0px 0vw; 
+  padding: 0 20px;
+}
+
+}

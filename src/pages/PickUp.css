@@ -1,0 +1,135 @@
+/* .base {
+width: 100%;
+height: 211vh;
+}
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center; 
+  width: 428px;
+  height: 926px;
+  margin: 0 auto;  
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+} */
+
+/* *** PICK UP CSS *** */
+
+.pickup-cont {
+  width: 100%;
+}
+
+.pickup-title-cont {
+  width: 100%;
+  height: 250px;
+  margin: -5vw 0 0 0;
+}
+
+.pickup-btn-cont{
+  width: 100%;
+}
+
+
+@media all and (min-width: 800px) {
+  .paymentp-cont    { flex: 3 0px; }
+  .paymentp-cont { order: 1; } 
+  .paymentp-title-cont   { order: 2; }
+  .paymentp-btn-cont { order: 3; } 
+}
+
+.done {
+  background: rgb(33,232,229);
+  background: linear-gradient(230.5deg, rgba(33,232,229,1) 36%, rgba(87,57,214,1) 36%);
+}
+
+.done-btn{
+  background: #fff;
+  border: none;
+  color: #282828;
+  pointer-events: auto;
+  z-index: 4; 
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 72px;
+  width: 276px;
+  height: 76px;
+}
+
+.pickup-page-donut{  
+  margin: 8vw auto 0 auto;
+}
+
+.pickup-page-donut-img{
+  width: 293px;
+  height: 282px;
+  position: relative;
+  z-index: 3;
+}
+
+.payment-big-title {
+  font-size: 40px;
+  letter-spacing: 0px;
+  font-weight: 900;
+  padding-top: 0vw;
+  z-index: 4;
+  line-height: 1.07;
+  letter-spacing: 0;
+  margin: 29vw auto 0 auto;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 3px rgb(5 2 1 / 67%);
+}
+
+.payment-big-title2 {
+  font-size: 40px;
+  letter-spacing: 0px;
+  font-weight: 900;
+  padding-top: 0vw;
+  padding-right: 20px;
+  z-index: 4;
+  line-height: 1.07;
+  letter-spacing: 0;
+  margin: 4vw 0vw;
+  text-align: right;
+  color: white;
+}
+
+
+@media (max-width: 428px) {
+  /* .wrapper {
+    overflow: hidden;
+    width: 390px;
+    height: 673px;
+  } */
+
+  .pickup-page-donut {
+    margin: 10vw auto 0 auto;
+}
+
+.pickup-page-donut-img {
+  width: 248px;
+  height: 282px;
+  position: relative;
+  z-index: 3;
+}
+
+.pickup-title-cont {
+  width: 100%;
+  margin-top: -53vw;
+}
+
+.pickup-btn-cont {
+  width: 100%;
+  margin-top: -57vw;
+  height: 51vw;
+}
+}
+
+ 

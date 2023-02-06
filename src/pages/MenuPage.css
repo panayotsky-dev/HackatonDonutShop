@@ -1,0 +1,180 @@
+/* .base {
+width: 100%;
+height: 211vh;
+}
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center; 
+  width: 100%;
+  height: 926px;
+  margin: 0 auto; 
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+} */
+
+/* *** MENU CSS *** */
+.menu-bg {
+  background-color: #21E8E5;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+  margin: 2.5vw 0px;
+}
+
+
+.main {
+  text-align: left;
+  width: 30%;
+}
+
+.aside-1 { 
+  width: 60%;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 2 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 1 0px; }
+  .aside-1 { order: 1;} 
+  .main    { order: 2;}
+}
+
+.text1 {
+  padding: 0;
+  }
+
+.menu-small-title {
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+  line-height: 0.3;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  /* margin: 4.5vw -0.2vw 0px 0vw; */
+   margin: 4.5vw 0vw 0px 0vw;
+   padding: 0 20px;
+}
+
+.menu-big-title {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 72px;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 2px; 
+  line-height: 1;
+  margin: 0vw 0vw 0 3.3vw;
+  padding: 0 20px;
+}
+
+/* Menu Template */
+
+.menu-donut { 
+  width: 118px;
+  height: 118px;
+  z-index: 2;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.55));
+  
+  /* position: fixed;
+  margin: -6.4vw 0.2vw 0 2.7vw; */
+}
+
+.menu-donut-title {
+  position: absolute;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 34px;
+  text-align: right;
+  width: 200px;
+}
+
+
+@media (max-width: 428px) {
+  /* .wrapper {
+    overflow: hidden;
+    width: 390px;
+    height: 673px;
+  } */
+ 
+  .menu-donut { 
+    width: 101px;
+    height: 101px;
+    z-index: 2;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.55));
+    
+}
+
+  .main {
+    text-align: left;
+    width: 35%;
+    
+  }
+  
+  .aside-1 { 
+    width: 65%;
+  }
+ 
+}
+
+@media (max-width: 650px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    margin: 3.5vw 0px 0 0px;
+    
+}
+
+.menu-big-title {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 86px;
+  line-height: 72px;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin: 0vw 0vw 2vw 0.3vw;
+  padding: 0 23px;
+}
+
+.menu-small-title {
+text-align: right;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-weight: 900;
+line-height: 0.3;
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 900;
+font-size: 48px;
+margin: 7.5vw 1.4vw 0px 0vw;
+padding: 0 20px;
+}
+
+}

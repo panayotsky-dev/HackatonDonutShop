@@ -1,0 +1,311 @@
+/* .base {
+width: 100%;
+height: 211vh;
+}
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center; 
+  width: 428px;
+  height: 926px;
+  margin: 0 auto; 
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+} */
+
+/* *** PAYMENT CSS *** */
+.pay {
+  background-color: #FF86B3;
+}
+ 
+@media all and (min-width: 800px) { 
+
+  .t1 { order: 1; } 
+  .t2  { order: 2; }
+  .t3  { order: 3; } 
+  .apple-container { order: 4; }
+  .gpay-container   { order: 5; }
+  .payment-page-donut1 { order: 6; }
+  .payment-page-donut2  { order: 7; }
+}
+
+.payment-page-donut1{
+  background-image: url('/sky_shaped.svg');
+  width: 220px;
+  height: 220px;
+  background-repeat: no-repeat;
+  top: 0; 
+  z-index: 2;
+  margin: 0vw 0 0 -6vw;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.55));
+}
+
+
+.payment-page-donut2{
+    background-image: url('/unicorn_dust.svg');
+    width: 250px;
+    height: 185px;
+    margin: 40vw 0 0 14vw;
+    position: absolute;
+    background-repeat: no-repeat;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.55));
+  }
+
+  .t1 {
+    width: 100%;
+    height: 4vw; 
+    margin: 8vw 0 0 3vw;
+  }
+
+  .t2 {
+    width: 100%;
+    height: 0vw; 
+    margin: -2.7vw 3.9vw 0 0;
+  }
+
+  .t3 {
+    width: 100%;
+    height: 4vw;  
+    margin: -2.5vw 0 0 0;
+  }
+ 
+
+.donut-mid-title {
+  font-size: 60px;
+  font-weight: 900; 
+  z-index: 4;
+  width: 330px; 
+  text-align: center; 
+  letter-spacing: 2px;
+  height: 47px;
+}
+
+
+.donut-small-title {
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  font-weight: 900;
+  line-height: 0.3;
+  z-index: 4;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 40px;
+}
+
+.donut-big-title {
+  text-align: center; 
+  font-size: 97px;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  font-weight: 900;
+  line-height: 1;
+  z-index: 4; 
+}
+
+.apple-container {
+  width: 100%;
+  height: 4vw; 
+}
+
+.apple-btn{
+    background: #fff;
+    border: none;
+    color: #282828;
+    pointer-events: auto;
+    z-index: 4; 
+    background-image: url('/apple-pay.png');
+    background-position: 52% 52%;
+    background-size: 123px 119px;
+    background-repeat: no-repeat;
+    width: 276px;
+    height: 76px; 
+}
+
+.gpay-container {
+  width: 100%;
+  height: 4vw;
+  margin: -2vw 0 0 0;
+}
+
+.gpay-btn{
+  background: #fff;
+  border: none;
+  color: #282828;
+  pointer-events: auto;
+  z-index: 4; 
+  background-image: url('/google-pay.png');
+  background-position: 49% 38%;
+  background-size: 119px 107px;
+  background-repeat: no-repeat;
+  width: 276px;
+  height: 76px; 
+}
+
+
+@media (max-width: 428px) {
+  .wrapper {
+    overflow: hidden;
+  }
+ 
+  .payment-page-donut2 {
+    background-image: url(/unicorn_dust.svg);
+    width: 250px;
+    height: 185px;
+    margin: 173vw 0 0 67vw;
+    position: fixed;
+    background-repeat: no-repeat;
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.55));
+}
+
+.payment-page-donut1 {
+  background-image: url(/sky_shaped.svg);
+  width: 220px;
+  height: 220px;
+  background-repeat: no-repeat;
+  top: 0; 
+  z-index: 2;
+  margin: 130vw 0 0 -30vw;
+  position: fixed;
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.55));
+}
+
+.apple-container {
+width: 100%;
+height: 4vw;
+margin: 113vw 0 0 0;
+position: fixed;
+}
+
+.gpay-container {
+width: 100%;
+height: 4vw;
+margin: 91vw 0 0 0;
+position: fixed;
+}
+
+.t1 {
+width: 100%;
+height: 4vw;
+margin: 33vw 0 0 16vw;
+position: fixed;
+}
+
+.t2 {
+width: 100%;
+height: 4vw;
+margin: 51vw 0 0 -19vw;
+position: fixed;
+}
+
+.t3 {
+width: 100%;
+height: 4vw;
+margin: 59vw 0 0 3vw;
+position: fixed;
+}
+
+.pickup-title-cont {
+width: 100%; 
+margin-top: 11vw;
+}
+
+.payment-page-donut {
+margin: -138vw auto 0 auto;
+}
+
+.payment-title-cont {
+width: 100%;
+height: 250px;
+margin: -95vw 0 0 0;
+}
+}
+
+
+
+@media (max-width: 428px) {
+  /* .wrapper {
+    overflow: hidden;
+    width: 390px;
+    height: 673px;
+  } */
+  .payment-page-donut2 {
+    background-image: url(/unicorn_dust.svg);
+    width: 160px;
+    height: 160px;
+    margin: 142vw 0 0 64vw;
+    position: fixed;
+    background-repeat: no-repeat;
+}
+
+.payment-page-donut1 {
+  background-image: url(/sky_shaped.svg);
+  width: 186px;
+  height: 182px;
+  background-repeat: no-repeat;
+  top: 0;
+  /* position: relative; */
+  z-index: 2;
+  margin: 115vw 0 0 -28vw;
+  position: fixed;
+}
+
+.apple-container {
+width: 100%;
+height: 4vw;
+margin: 97vw 0 0 0;
+position: fixed;
+}
+
+.gpay-container {
+width: 100%;
+height: 4vw;
+margin: 74vw 0 0 0;
+position: fixed;
+}
+
+.t1 {
+width: 100%;
+height: 4vw;
+margin: 23vw 0 0 12vw;
+position: fixed;
+}
+
+.t2 {
+width: 100%;
+height: 4vw;
+margin: 41vw 0 0 -17vw;
+position: fixed;
+}
+
+.t3 {
+width: 100%;
+height: 4vw;
+margin: 49vw 0 0 1vw;
+position: fixed;
+}
+
+.pickup-title-cont {
+width: 100%; 
+margin-top: 11vw;
+}
+
+.payment-page-donut {
+margin: -138vw auto 0 auto;
+}
+
+.payment-title-cont {
+width: 100%;
+height: 250px;
+margin: -95vw 0 0 0;
+}
+}
+
+ 
