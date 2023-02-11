@@ -1,5 +1,6 @@
 # v0.2 trying to fix a bug in vercel that deploys only first page
 # what includes
+![v02](https://user-images.githubusercontent.com/104060829/218282272-dca06487-1571-4236-b5fd-e5c281a6d420.PNG)
 
 <p>What i have added more from the description:</p>
   <p>1.HomeScreen text animation</p>
